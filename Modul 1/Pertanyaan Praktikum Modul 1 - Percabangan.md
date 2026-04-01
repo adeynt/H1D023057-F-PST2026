@@ -52,7 +52,7 @@ Jadi, perintah ini mengatur lama nyala dan lama mati LED, yang akhirnya menentuk
 ### 4. Jika program memiliki alur **mati → lambat → cepat → reset (mati)**, ubah menjadi: **lambat → cepat → sedang → mati
 #### Source Code
 ```
-const int ledPin = 12;
+const int ledPin = 6;
 int timeDelay = 1000;
 int mode = 0;  // 0 = lambat ke cepat, 1 = cepat ke sedang, 2 = mati
 
@@ -91,9 +91,9 @@ void loop() {
 #### Penjelasan
 1. Inisialisasi variabel
 ```
-const int ledPin = 12;
+const int ledPin = 6;
 ```
-Baris ini digunakan untuk menyimpan nomor pin yang terhubung ke LED, yaitu pin 12. Kata const berarti nilai tersebut tetap dan tidak akan diubah selama program berjalan.
+Baris ini digunakan untuk menyimpan nomor pin yang terhubung ke LED, yaitu pin 6. Kata const berarti nilai tersebut tetap dan tidak akan diubah selama program berjalan.
 ```
 int timeDelay = 1000;
 ```

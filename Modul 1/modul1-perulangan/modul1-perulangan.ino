@@ -1,25 +1,31 @@
-int timer = 100;  
-// delay. Semakin besar nilainya, semakin lambat perpindahan LED.
+int timer = 100;
+// delay. Semakin tinggi angkanya, semakin lambat waktunya.
 
 void setup() {
-  // Inisialisasi pin 11 sampai 14 sebagai OUTPUT
-  for (int ledPin = 11; ledPin <= 14; ledPin++) {
+  // gunakan loop for untuk menginisialisasi setiap pin sebagai output
+  for (int ledPin = 2; ledPin < 8; ledPin++) {
     pinMode(ledPin, OUTPUT);
   }
 }
 
 void loop() {
-  // Looping dari pin rendah ke tinggi
-  for (int ledPin = 11; ledPin <= 14; ledPin++) {
-    digitalWrite(ledPin, HIGH);  
-    delay(timer);                
-    digitalWrite(ledPin, LOW);   
+  // looping dari pin rendah ke tinggi
+  for (int ledPin = 2; ledPin < 8; ledPin++) {
+    // hidupkan LED pin-nya
+    digitalWrite(ledPin, HIGH);
+    delay(timer);
+
+    // matikan LED pin-nya
+    digitalWrite(ledPin, LOW);
   }
 
-  // Looping dari pin tinggi ke rendah
-  for (int ledPin = 14; ledPin >= 11; ledPin--) {
-    digitalWrite(ledPin, HIGH);  
-    delay(timer);                
-    digitalWrite(ledPin, LOW);   
+  // looping dari pin tinggi ke rendah
+  for (int ledPin = 7; ledPin >= 2; ledPin--) {
+    // hidupkan LED pin-nya
+    digitalWrite(ledPin, HIGH);
+    delay(timer);
+
+    // matikan LED pin-nya
+    digitalWrite(ledPin, LOW);
   }
 }
