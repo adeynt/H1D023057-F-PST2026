@@ -1,4 +1,4 @@
-# Praktikum Sistem Tertanam - Modul 1 Percabangan dan Perulangan
+# Praktikum Sistem Tertanam - Modul 1 Percabangan
 
 ## Pertanyaan Praktikum
 1. Pada kondisi apa program masuk ke blok `if`?
