@@ -109,7 +109,7 @@ void setup() {
   pinMode(ledPin, OUTPUT);
 }
 ```
-`pinMode(ledPin, OUTPUT);` berfungsi untuk mengatur pin 12 sebagai output, sehingga pin tersebut dapat digunakan untuk menyalakan dan mematikan LED.
+`pinMode(ledPin, OUTPUT);` berfungsi untuk mengatur pin 6 sebagai output, sehingga pin tersebut dapat digunakan untuk menyalakan dan mematikan LED.
 
 3. Fungsi `loop()`
 ```
