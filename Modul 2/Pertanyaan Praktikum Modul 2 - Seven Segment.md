@@ -9,7 +9,7 @@
 ## Jawaban
 
 ### 1. Gambarkan rangkaian schematic yang digunakan pada percobaan!
-![Rangkaian Seven Segment](Modul 2 seven segment.jpg)
+![Rangkaian Seven Segment](Modul-2-seven-segment.jpg)
 
 ### 2. Apa yang terjadi jika nilai `num` lebih dari 15?
 Karena indeks yang valid hanya 0-15, maka ketika `num` labih dari 15 program akan mencoba mengakses data di luar batas array `digitPattern` yang mengakibatkan seven segment menampilkan pola yang salah atau acak, beberapa segmen bisa menyala tidak sesuai, dan program berpotensi menjadi tidak stabil.

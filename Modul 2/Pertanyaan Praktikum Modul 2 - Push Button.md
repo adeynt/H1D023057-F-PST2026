@@ -9,7 +9,7 @@
 ## Jawaban
 
 ### 1. Gambarkan rangkaian schematic yang digunakan pada percobaan!
-![Seven Segment](Modul 2/Modul 2 push button.jpg)
+![Seven Segment](Modul-2-push-button.jpg)
 
 ### 2. Mengapa pada push button digunakan mode `INPUT_PULLUP` pada Arduino Uno? Apa keuntungannya dibandingkan rangkaian biasa?
 Mode INPUT_PULLUP pada Arduino Uno digunakan untuk mengaktifkan resistor pull-up internal sehingga pin input secara default berada pada kondisi HIGH dan akan berubah menjadi LOW saat push button ditekan. Keuntungan penggunaan INPUT_PULLUP dibandingkan rangkaian biasa adalah:
@@ -35,7 +35,7 @@ Jika salah satu segmen pada seven segment tidak menyala, kemungkinan penyebabnya
 - Fungsi digitalWrite() tidak dipanggil dengan benar.
 
 ### 4. Modifikasi rangkaian dan program dengan dua push button yang berfungsi sebagai **penambahan (increment)** dan **pengurangan (decrement)** pada sistem counter!
-![Rangkaian Seven Segment](Modul 2 PB.jpg)
+![Rangkaian Seven Segment](Modul-2-PB.jpg)
 ```
 / ================= PIN =================
 const int segmentPins[8] = {7, 6, 5, 11, 10, 8, 9, 4};
