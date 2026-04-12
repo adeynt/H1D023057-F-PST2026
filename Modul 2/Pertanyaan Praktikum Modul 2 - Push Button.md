@@ -9,7 +9,7 @@
 ## Jawaban
 
 ### 1. Gambarkan rangkaian schematic yang digunakan pada percobaan!
-![Rangkaian Seven Segment](Modul 2 push button.jpg)
+![Seven Segment](Modul 2/Modul 2 push button.jpg)
 
 ### 2. Mengapa pada push button digunakan mode `INPUT_PULLUP` pada Arduino Uno? Apa keuntungannya dibandingkan rangkaian biasa?
 Mode INPUT_PULLUP pada Arduino Uno digunakan untuk mengaktifkan resistor pull-up internal sehingga pin input secara default berada pada kondisi HIGH dan akan berubah menjadi LOW saat push button ditekan. Keuntungan penggunaan INPUT_PULLUP dibandingkan rangkaian biasa adalah:
