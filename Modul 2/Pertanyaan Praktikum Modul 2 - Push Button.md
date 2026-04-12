@@ -35,7 +35,7 @@ Jika salah satu segmen pada seven segment tidak menyala, kemungkinan penyebabnya
 - Fungsi digitalWrite() tidak dipanggil dengan benar.
 
 ### 4. Modifikasi rangkaian dan program dengan dua push button yang berfungsi sebagai **penambahan (increment)** dan **pengurangan (decrement)** pada sistem counter!
-![Rangkaian Seven Segment](Modul-2-PB.jpg)
+![Rangkaian Seven Segment](Modul-2-PB.png)
 ```
 / ================= PIN =================
 const int segmentPins[8] = {7, 6, 5, 11, 10, 8, 9, 4};
