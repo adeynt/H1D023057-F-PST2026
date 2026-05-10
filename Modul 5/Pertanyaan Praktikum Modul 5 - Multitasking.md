@@ -69,12 +69,12 @@ void TaskBlink1(void *pvParameters) {
 }
 
 void TaskBlink2(void *pvParameters) {
-  pinMode(7, OUTPUT);
+  pinMode(9, OUTPUT);
   while(1) {
     Serial.println("Task2");
-    digitalWrite(7, HIGH); 
+    digitalWrite(9, HIGH); 
     vTaskDelay( 300 / portTICK_PERIOD_MS ); 
-    digitalWrite(7, LOW); 
+    digitalWrite(9, LOW); 
     vTaskDelay( 300 / portTICK_PERIOD_MS ); 
   }
 }
@@ -190,17 +190,17 @@ Menidurkan Task 1 lagi selama selang waktu yang sama membiarkan LED dalam posisi
 5. Definisi Task 2 (Kontrol LED Statis)</br>
 ```
 void TaskBlink2(void *pvParameters) {
-  pinMode(7, OUTPUT);
+  pinMode(9, OUTPUT);
   while(1) {
     Serial.println("Task2");
-    digitalWrite(7, HIGH); 
+    digitalWrite(9, HIGH); 
     vTaskDelay( 300 / portTICK_PERIOD_MS ); 
-    digitalWrite(7, LOW); 
+    digitalWrite(9, LOW); 
     vTaskDelay( 300 / portTICK_PERIOD_MS ); 
   }
 }
 ```
-Logikanya persis sama seperti Task 1, namun ini untuk mengatur LED di pin digital 7. Task ini tidak membaca sensor, melainkan selalu menyala statis 300ms dan mati statis 300ms secara berulang serta mencetak "Task2" ke monitor.
+Logikanya persis sama seperti Task 1, namun ini untuk mengatur LED di pin digital 9. Task ini tidak membaca sensor, melainkan selalu menyala statis 300ms dan mati statis 300ms secara berulang serta mencetak "Task2" ke monitor.
 
 6. Definisi Task 3 (Pencetak Counter)</br>
 ```
